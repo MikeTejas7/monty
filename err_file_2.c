@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
@@ -69,3 +70,9 @@ int pchar_error(unsigned int line_number, char *message)
 	fprintf(stderr, "L%u: can't pchar, %s\n", line_number, message);
 	return (EXIT_FAILURE);
 }
+
+
+/*
+ * File: err_file_2.c
+ * Auth: CHIME Michael
+ */
